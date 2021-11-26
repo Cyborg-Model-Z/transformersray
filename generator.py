@@ -1,0 +1,5 @@
+from transformers import pipeline
+generator = pipeline("text-generation", model="distilgpt2")
+generator(
+"In this course we will", 
+max_length=30,num_return_sequences=2,)
